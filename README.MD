@@ -1,3 +1,7 @@
+Username/Password Info for Logging into Website:
+1) Username: neha, Password: nn2681
+2) Username: grader, Password: nn$38973
+
 Github-Deploy Setup: 
 1) First, I created a new public repository in GitHub named "cse135_intro_website." 
 2) Then, I used the following commands to push all my website files that I had created on my remote server to this repository:
