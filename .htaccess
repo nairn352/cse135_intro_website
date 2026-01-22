@@ -2,3 +2,11 @@ AuthType Basic
 AuthName "Restricted Content"
 AuthUserFile /etc/apache2/.htpasswd
 Require valid-user
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml
+    AddOutputFilterByType DEFLATE text/css text/javascript application/javascript
+    AddOutputFilterByType DEFLATE application/json application/xml
+    AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-woff application/font-woff2
+</IfModule>
+
