@@ -1,0 +1,110 @@
+.set {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.title {
+  background-color: #edd8b0; 
+  border-radius: 15px;     
+  padding: 20px;                      
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 60px;    
+  text-align: center;    
+  font-family: Georgia, 'Times New Roman', Times, serif;          
+}
+
+.text-block {
+  display: block;
+  font-family: Garamond, "EB Garamond", "Times New Roman", serif;
+}
+
+.main-text {
+    margin-left: 20px;
+    font-size: clamp(16px, 2vw, 24px);
+    line-height: 1.6;
+    text-align: justify;
+    font-family: Garamond, "EB Garamond", "Times New Roman", serif;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.main-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid #A78F5F;
+  border-radius: 15px;
+}
+
+.home-button {
+    position: absolute;
+    top: 20px;
+    background-color: #A78F5F;
+    color: white;
+    padding: 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Garamond, "EB Garamond", "Times New Roman", serif;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+body {
+    margin-top: 0;
+}
+
+.end {
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+    font-family: Garamond, "EB Garamond", "Times New Roman", serif;  
+    color: white;                    
+    background-color: #A78F5F;
+    padding: 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;     
+    outline: none;  
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .set {
+    flex-direction: column;   
+    align-items: center;      
+  }
+
+  .text-block {
+    margin-right: 20px;      
+    text-align: justify;       
+  }
+
+  .image {
+    width: 80%;               
+  }
+
+  .links {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 8px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+}
