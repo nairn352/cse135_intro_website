@@ -1,3 +1,5 @@
+Team Member(s): Neha Nair
+
 Username/Password Info for Logging into Website:
 1) Username: neha, Password: nn2681
 2) Username: grader, Password: nn$38973
@@ -13,3 +15,7 @@ Github-Deploy Setup:
 3) To deploy to DigitalOcean, I created an app on DigitalOcean. I connected this app to the GitHub repo I had just created. I selected the specific branch (master) to deploy. 
 4) Finally, I checked the auto-deploy option so that any updates made to the repo would automatically result in a new deployment of the website on DigitalOcean. 
 5) Static website was successfully deployed!
+
+Changes to HTML file in DevTools after compression: 
+    After compression, when I go to the "Network" section in DevTools, press on my HTML file, and check the "Response Headers" section in the "Header" tab, I see that "Content-Encoding" is set to gzip. In addition, if I hover over the size shown for my HTML file, I notice that the "transferred size" is smaller than the "resource size" for the file. This also indicates that the file has been compressed. 
+
