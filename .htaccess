@@ -10,3 +10,6 @@ Require valid-user
     AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-woff application/font-woff2
 </IfModule>
 
+<IfModule mod_headers.c>
+    Header always set Server "CSE135 Server"
+</IfModule>

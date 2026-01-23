@@ -19,3 +19,5 @@ Github-Deploy Setup:
 Changes to HTML file in DevTools after compression: 
     After compression, when I go to the "Network" section in DevTools, press on my HTML file, and check the "Response Headers" section in the "Header" tab, I see that "Content-Encoding" is set to gzip. In addition, if I hover over the size shown for my HTML file, I notice that the "transferred size" is smaller than the "resource size" for the file. This also indicates that the file has been compressed. 
 
+Obscuring Server Identity:
+    First, I installed and configured libapache2-mod-security2 (mod_security), which is an open-source Web Application Firewall module for Apache. Then, I configured Apache's ServerTokens directive by editing Apache's configuration file to set "ServerTokens" to "Full." I located the ModSecurity configuration file and added the "SecServerSignature" directive with "CSE135 Server." In this file, I also ensured that "SecRuleEngine" was set to "On." Finally, I restarted Apache and when I reloaded my webpage, "Server" in the "Response Headers" section of my DevTools had changed to "CSE135 Server," as desired. 
