@@ -13,3 +13,5 @@ Require valid-user
 <IfModule mod_headers.c>
     Header always set Server "CSE135 Server"
 </IfModule>
+
+ErrorDocument 404 /404.html
