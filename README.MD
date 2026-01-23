@@ -67,7 +67,7 @@ Github-Deploy Setup:
     -git push
 3) To deploy to DigitalOcean, I created an app on DigitalOcean. I connected this app to the GitHub repo I had just created. I selected the specific branch (master) to deploy. 
 4) Finally, I checked the auto-deploy option so that any updates made to the repo would automatically result in a new deployment of the website on DigitalOcean. 
-5) Static website was successfully deployed!
+5) Static website was successfully deployed (https://orca-app-mf4nt.ondigitalocean.app/)!
 
 Username/Password Info for Logging into Website:
 1) Username: neha, Password: nn2681
