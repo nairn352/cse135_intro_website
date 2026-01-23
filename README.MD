@@ -4,7 +4,7 @@ SSH Key: in separate .pem file (attached to submission)
 
 SSH Passphrase: nn$38973
 
-Password for grader account: nn$38973
+Password for grader account: nn$38973!
 
 Link to cse135intro.site: https://cse135intro.site/
 
